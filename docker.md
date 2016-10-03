@@ -156,6 +156,10 @@ docker run -i -t --entrypoint /bin/bash centos-6.6-x86-64-desktop-pb
 docker run -d -it -p 25565:25565 --name mc -e VERSION=1.8.9 -v /home/user/docker/minecraft/data:/data -e EULA=true -e OPS=Hikupz -e ALLOW_NETHER=true -e ANNOUNCE_PLAYER_ACHIEVEMENTS=true -e ENABLE_COMMAND_BLOCK=true -e ENABLE_COMMAND_BLOCK=true -e GENERATE_STRUCTURES=true -e SPAWN_ANIMALS=true -e SPAWN_MONSTERS=true -e SPAWN_NPCS=true -e MODE=survival -e MODPACK=https://www.spigotmc.org/resources/ride-a-mob-beta.29983/download?version=117160 itzg/minecraft-server
 ```
 
+### Make a certain user op
+
+Already covered by `-e OPS=` option, but also can be done manually with 
+
 Get uuid from http://minecraft-techworld.com/uuid-lookup-tool
 
 Edit `/data/ops.json` and add highest op level to your username
